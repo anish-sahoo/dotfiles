@@ -1,0 +1,23 @@
+{
+  "icon_theme": "VSCode Great Icons Theme",
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "ui_font_size": 16,
+  "buffer_font_features": {
+    "calt": false
+  },
+  "buffer_font_size": 16,
+  "terminal": {
+    "font_family": "JetBrainsMonoNL Nerd Font"
+  },
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "JetBrains New Dark"
+  }
+}
