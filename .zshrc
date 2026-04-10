@@ -8,11 +8,17 @@ alias copy='pbcopy'
 alias glog='git log --all --decorate --oneline --graph'
 
 alias z='zed'
-
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export STARSHIP_CONFIG=~/.config/starship.toml
 eval "$(starship init zsh)"
+
+export GOPATH="$(go env GOPATH)"
+export PATH="$PATH:$GOPATH/bin"
 
 # docker stuff
 fpath=(/Users/anish/.docker/completions $fpath)
@@ -41,3 +47,6 @@ autoload -U compinit && compinit
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
